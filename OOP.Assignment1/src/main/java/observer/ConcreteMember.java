@@ -29,4 +29,12 @@ public class ConcreteMember implements Member {
     public UndoableStringBuilder getStr() {
         return str;
     }
+
+    public String getSentence() {
+        return sentence;
+    }
+
+    public void setSentence(String sentence) {
+        this.sentence = sentence;
+    }
 }
