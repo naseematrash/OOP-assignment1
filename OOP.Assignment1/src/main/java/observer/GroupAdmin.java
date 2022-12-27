@@ -7,10 +7,17 @@ public class GroupAdmin implements Sender{
     private UndoableStringBuilder stringbuilder;
     private List<Member> members;
 
+    public List<Member> getMembers() {
+        return members;
+    }
+
+    public UndoableStringBuilder getStringbuilder() {
+        return stringbuilder;
+    }
 
     /**constructor */
     public GroupAdmin(UndoableStringBuilder stringbuilder){
-        /*rethinkit*/
+
         this.stringbuilder=stringbuilder;
         members=new ArrayList<>();
 
@@ -64,5 +71,7 @@ public class GroupAdmin implements Sender{
     public void notifymembers(){
         for(Member member:members)
             member.update(stringbuilder);
+
+    System.out.println("all members has been notified");
     }
 }
