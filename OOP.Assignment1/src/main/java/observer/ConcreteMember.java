@@ -8,7 +8,7 @@ public class ConcreteMember implements Member {
     private UndoableStringBuilder str;
     public ConcreteMember(GroupAdmin m){
         this.member=m;
-
+        this.str=m.getStringbuilder();
         addme();
     }
     public void addme(){
