@@ -6,6 +6,7 @@ public class ConcreteMember implements Member {
 
     private GroupAdmin member;
     private UndoableStringBuilder str;
+    private String sentence;
     public ConcreteMember(GroupAdmin m){
         this.member=m;
         this.str=m.getStringbuilder();
@@ -22,7 +23,7 @@ public class ConcreteMember implements Member {
     @Override
     public void update(UndoableStringBuilder usb) {
         this.str=usb;
-
+        sentence=usb.toString();
     }
 
     public UndoableStringBuilder getStr() {
