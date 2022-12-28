@@ -8,32 +8,31 @@ public class ConcreteMember implements Member {
 
     //private String sentence;
 
-    public ConcreteMember(GroupAdmin m){
-        this.member=m;
+    public ConcreteMember(GroupAdmin m) {
+        this.member = m;
         member.setStringbuilder(m.getStringbuilder());
         addme();
 
     }
 
 
-   public void addme(){
+    public void addme() {
         member.register(this);
     }
 
 
-    public void unregisterme(){
+    public void unregisterme() {
         member.unregister(this);
     }
+
     @Override
     public void update(UndoableStringBuilder usb) {
         this.member.setStringbuilder(usb);
 
     }
-    public String toString(){
 
+    public String toString() {
+        return member.getStringbuilder().toString();
     }
-
-
-
 
 }

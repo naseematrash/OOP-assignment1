@@ -79,14 +79,4 @@ public class GroupAdmin implements Sender{
     System.out.println("all members has been notified");
     }
 
-    public static void main(String[] args) {
-        GroupAdmin a = new GroupAdmin();
-        ConcreteMember m1 = new ConcreteMember(a);
-        ConcreteMember m2 = new ConcreteMember(a);
-        System.out.println(a.members.toString());
-
-        a.append("hello a");
-
-
-    }
 }
