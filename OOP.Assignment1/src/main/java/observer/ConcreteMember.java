@@ -3,16 +3,20 @@ package observer;
 
 
 public class ConcreteMember implements Member {
-
     private GroupAdmin member;
-    private UndoableStringBuilder str;
-    private String sentence;
+
+
+    //private String sentence;
+
     public ConcreteMember(GroupAdmin m){
         this.member=m;
-        this.str=m.getStringbuilder();
+        member.setStringbuilder(m.getStringbuilder());
         addme();
+
     }
-    public void addme(){
+
+
+   public void addme(){
         member.register(this);
     }
 
@@ -22,19 +26,14 @@ public class ConcreteMember implements Member {
     }
     @Override
     public void update(UndoableStringBuilder usb) {
-        this.str=usb;
-        sentence=usb.toString();
+        this.member.setStringbuilder(usb);
+
+    }
+    public String toString(){
+
     }
 
-    public UndoableStringBuilder getStr() {
-        return str;
-    }
 
-    public String getSentence() {
-        return sentence;
-    }
 
-    public void setSentence(String sentence) {
-        this.sentence = sentence;
-    }
+
 }

@@ -1,11 +1,14 @@
 package observer;
-
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GroupAdmin implements Sender{
+
     private UndoableStringBuilder stringbuilder;
-    private List<Member> members;
+    private ArrayList<Member> members;
+
 
     public List<Member> getMembers() {
         return members;
@@ -14,6 +17,7 @@ public class GroupAdmin implements Sender{
     public UndoableStringBuilder getStringbuilder() {
         return stringbuilder;
     }
+
 
     /**constructor */
     public GroupAdmin(UndoableStringBuilder stringbuilder){
@@ -27,9 +31,9 @@ public class GroupAdmin implements Sender{
         members=new ArrayList<>();
     }
 
-
-
-
+    public void setStringbuilder(UndoableStringBuilder stringbuilder) {
+        this.stringbuilder = stringbuilder;
+    }
 
     @Override
     public void register(Member obj) {
@@ -73,5 +77,16 @@ public class GroupAdmin implements Sender{
             member.update(stringbuilder);
 
     System.out.println("all members has been notified");
+    }
+
+    public static void main(String[] args) {
+        GroupAdmin a = new GroupAdmin();
+        ConcreteMember m1 = new ConcreteMember(a);
+        ConcreteMember m2 = new ConcreteMember(a);
+        System.out.println(a.members.toString());
+
+        a.append("hello a");
+
+
     }
 }
