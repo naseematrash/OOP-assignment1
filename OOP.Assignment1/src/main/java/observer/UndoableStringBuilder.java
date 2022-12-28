@@ -10,7 +10,7 @@ interface Action{
     void undo();
 }
 
-class UndoableStringBuilder {
+public class UndoableStringBuilder {
 
 
     private StringBuilder stringBuilder; // delegate
