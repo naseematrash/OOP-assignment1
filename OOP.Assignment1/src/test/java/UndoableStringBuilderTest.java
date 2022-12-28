@@ -5,11 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class UndoableStringBuilderTest {
 
     @Test
-    void append() {
+    void reverse() {
     }
 
     @Test
-    void delete() {
+    void append() {
     }
 
     @Test
@@ -17,15 +17,11 @@ class UndoableStringBuilderTest {
     }
 
     @Test
+    void delete() {
+    }
+
+    @Test
     void replace() {
-    }
-
-    @Test
-    void reverse() {
-    }
-
-    @Test
-    void testToString() {
     }
 
     @Test

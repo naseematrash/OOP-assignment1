@@ -4,11 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConcreteMemberTest {
 
-
     @Test
     void addme() {
-
-
     }
 
     @Test
@@ -18,5 +15,4 @@ class ConcreteMemberTest {
     @Test
     void update() {
     }
-
 }
