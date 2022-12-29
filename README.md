@@ -143,8 +143,7 @@ here, we'd tested concretemember:
 
 
 ### GroupAdminTest
-here we tested GroupAdmin class abilities and how it can handle
-different situations including passing an already registered member,
-checking exceptions with the UndoableStringBuilder, etc.
+here we tested GroupAdmin methods 
+
 
 
