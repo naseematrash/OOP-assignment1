@@ -122,17 +122,28 @@ the method it uses :
 		
 		
 ## Tests
-All the tests were made with the help of JUnit 5.
+All the tests were made with JUnit 5.
 
 ### UndoableStringBuilderTest
-In this class, we tested all the UndoableStringBuilder functionality.
+here, we tested all the UndoableStringBuilder methods
+	,	1.reverse() 
+		2.append(String str)
+		3.undo() 
+		4.insert(int offset, String str) 
+		5.delete(int start, int end) 
+		6.replace(int start, int end, String str) 
+		
 
 ### ConcreteMemberTest
-In this class, we'd tested the functionality of the update method
-of the ConcreteMember class.
+here, we'd tested concretemember:
+	the addme method
+	and the unregisterme method
+	and update method.
+	
+
 
 ### GroupAdminTest
-This class tests the GroupAdmin class abilities and how it can handle
+here we tested GroupAdmin class abilities and how it can handle
 different situations including passing an already registered member,
 checking exceptions with the UndoableStringBuilder, etc.
 
