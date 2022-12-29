@@ -159,5 +159,7 @@ here we tested GroupAdmin methods
 	after that extract the code and open intellij press open and then the project will be ready for you will the test and everything
 	if you see an red warning  - go to view -> tool windows -> maven 
 	and a sidebar will show on the right side hit the reload putton and boom everything is ready 
+	now just do import the package observer which it contains all the classes to use and you are ready 
+	
 	enjoy :D
 
