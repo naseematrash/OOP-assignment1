@@ -1,10 +1,10 @@
-# OOP Assignment1
+#OOP Assignment1
 
 **by Naseem And Gammel**
 
-## Description 
+##Description 
 
-### UndoableStringBuilder And Observer Design-Patten 
+###UndoableStringBuilder And Observer Design-Patten 
 The assignment is around how we can use the Observer Design-pattern  
 and add to it our Ex0 project which was about the UndoableStringBuilder
 
@@ -16,7 +16,7 @@ In the assignment we have two interfaces which are used for the observer design-
 Sender: is the observable  
 Member: is the our observer  
 
-### GroupAdmin
+###GroupAdmin
 The GroupAdmin class implements the Sender interface 
  GroupAdmin has 2 attributes :
 1.UndoableStringBuilder  
@@ -56,7 +56,7 @@ and update all the registered members by changing their UndoableStringBuilder
     void undo();
 
 
-### ConcreteMember : 
+###ConcreteMember : 
 The ConcreteMember class implements the Member interface
 which will create a member that subscribe to the Groupadmin list 
 and every change that happen in the stringbuilder it will be change for this member
