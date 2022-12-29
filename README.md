@@ -136,7 +136,4 @@ This class tests the GroupAdmin class abilities and how it can handle
 different situations including passing an already registered member,
 checking exceptions with the UndoableStringBuilder, etc.
 
-### JvmUtilities tests (Tests.java)
-In this class, we'd tested how our objects interact with
-the main memory and how efficient there are. We've used the JvmUtilities
-class and put all those tests in the Tests.java file.
+
