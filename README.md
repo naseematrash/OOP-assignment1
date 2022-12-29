@@ -56,7 +56,7 @@ and update all the registered members by changing their UndoableStringBuilder
     void undo();
 
 
-### ConcreteMember
+### ConcreteMember : 
 The ConcreteMember class implements the Member interface
 which will create a member that subscribe to the Groupadmin list 
 and every change that happen in the stringbuilder it will be change for this member
