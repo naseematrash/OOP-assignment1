@@ -46,7 +46,11 @@ public class GroupAdmin implements Sender{
      */
     @Override
     public void register(Member obj) {
-        this.members.add(obj);
+        if(members.contains(obj)){
+            System.out.println("this member has already been added");
+        }else {
+            this.members.add(obj);
+        }
 
     }
     /**
@@ -54,7 +58,11 @@ public class GroupAdmin implements Sender{
      */
     @Override
     public void unregister(Member obj) {
-        this.members.remove(obj);
+        if(!members.contains(obj)){
+            System.out.println("this member has already been removed");
+        }else {
+            this.members.remove(obj);
+        }
 
     }
     /**
