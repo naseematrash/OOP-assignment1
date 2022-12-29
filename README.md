@@ -146,4 +146,18 @@ here, we'd tested concretemember:
 here we tested GroupAdmin methods 
 
 
+	
+	
+
+	
+	
+	
+<h2> Using The Code : 
+	
+	
+	to use the code please click on the green word (code) and download zip 
+	after that extract the code and open intellij press open and then the project will be ready for you will the test and everything
+	if you see an red warning  - go to view -> tool windows -> maven 
+	and a sidebar will show on the right side hit the reload putton and boom everything is ready 
+	enjoy :D
 
