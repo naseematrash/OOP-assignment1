@@ -148,6 +148,13 @@ here we tested GroupAdmin methods
 
 	
 	
+### JvmUtilities Tests :
+Were talking about Tests.java file
+here, we tested how our objects interact with the main memory and how efficient it is 
+by using the JvmUtilities class
+ 
+	
+	
 
 	
 	
